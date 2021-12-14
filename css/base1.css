@@ -1,0 +1,119 @@
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;     /*触发bfc,防止外边距合并*/
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+.w {
+	width: 960px;
+	background-color: #fff;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+ul {
+	list-style: none;
+}
+a, blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	font-size: 12px;
+}
+body {
+	background-color: #817eff;
+}
+@font-face{        /*声明字体*/
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8qhwk5');
+  src:  url('../fonts/icomoon.eot?8qhwk5#iefix') format('embedded-opentype'),
+   url('../fonts/icomoon.ttf?8qhwk5') format('truetype'),
+   url('../fonts/icomoon.woff?8qhwk5') format('woff'),
+   url('../fonts/icomoon.svg?8qhwk5#icomoon') format('svg');
+   font-weight: normal;        /*不加粗*/
+   font-style: normal;        /* 不倾斜*/
+}
+input,
+button {
+	border: 0;
+	outline: none;/*        取消轮廓线*/
+}
+.header {
+	height: 60px;
+	background-color: #155b83;
+}
+.header div {
+	overflow: hidden;
+	height:60px;
+}
+.header div p {
+	float:left;
+	color: #c0bfbf;
+	line-height: 60px;
+	margin-left: 15px;
+}
+/*.header div ul {
+	float: right;
+    list-style: none outside none;
+    margin: 21px 0 0;
+    padding: 0;
+}*/
+.header div ul li {
+	color:#fff;
+	float:left;
+	width: 240px;
+	line-height: 60px;
+/*	list-style-position:inside;
+	list-style-type:disc;*/
+/*	margin:0 0 0 15px;*/
+/*	position:relative;*/
+}
+.header div ul li a {
+	color: orange;
+	font-family: 'forumregular';
+	font-size: 22px;
+	display: inline-block;
+	width: 240px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	
+/*	letter-spacing:2px;
+	text-decoration:none;
+	text-transform:uppercase;*/
+}
+.header div ul li a:hover{
+	color: #fff;
+}
+.null {
+	margin-bottom: 30px;
+}
+/********      footer    ****** */
+.footer {
+	height: 80px;
+	background-color: #f4f4f4;
+}
+.footer .con img {
+	display: block;
+	margin: 0 auto;
+}
+.copyright {
+	border-top: 2px solid #ccc;
+}
+.copyright p {
+	color: #333;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+}
